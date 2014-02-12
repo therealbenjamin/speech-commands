@@ -1,0 +1,42 @@
+body {
+  background-color: #CBDEC8;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+.title, .title > p {
+  font-family: Gafata;
+  font-size: 64px;
+  text-align: center;
+}
+
+.title > p {
+  line-height: 1em;
+}
+
+.background-div {
+  background: url("../images/speech.png");
+  background-size: 100% 100%;
+  height: 400px;
+  width: 600px;
+  margin: auto;
+}
+
+.image-div {
+  float: left;
+  margin: 0 auto;
+  margin-top: 95px;
+  margin-left: 65px;
+  /*border: 1px solid black;
+*/  height: 300px;
+  width: 450px;
+}
+
+.image-div > p {
+  padding-top: 50px;
+  font-size: 24px;
+  text-align: center;
+  font-family: Gafata;
+}
