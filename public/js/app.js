@@ -29,10 +29,6 @@ function displayImage(data) {
   });
 }
 
-var commands = {
-  'I want *desires': searchFlickr
-}
-
 function searchYahooAnswers(query){
   query = query.replace(/ /g, "%20")
   var url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20answers.search%20where%20query%3D%22" + query + "%22%20and%20type%3D%22resolved%22&format=json&diagnostics=true&callback="
@@ -44,4 +40,9 @@ function displayAnswer(response){
   $('.answer-div').empty()
   var $paragraph = $('<p>').text(answer)
   $('.answer-div').append($paragraph)
+}
+
+var commands = {
+  'I want *desires': searchFlickr,
+  'Tell me *question': searchYahooAnswers
 }
