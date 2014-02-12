@@ -40,3 +40,22 @@ body {
   font-family: Gafata;
   background-repeat: no-repeat;
 }
+
+.lower-div {
+  margin-top: 50px;
+}
+
+.answer-div > p {
+  font-size: 24px;
+  text-align: center;
+  font-family: Gafata;
+  background-repeat: no-repeat;
+}
+
+.answer-div {
+  float: left;
+  margin-top: 150px;
+  width: 600px;
+  max-height: 200px;
+  overflow: scroll;
+}
